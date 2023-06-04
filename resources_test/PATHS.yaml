@@ -1,0 +1,5 @@
+RELEASE:
+  OUTPUT: "$FLOOR/output"
+
+DEBUG:
+  OUTPUT: "~/dev/tool1/output"

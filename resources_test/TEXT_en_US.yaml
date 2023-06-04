@@ -1,0 +1,7 @@
+BTN_RELOAD: "Reload Data"
+BTN_SAVE: "Save File"
+BTN_LOAD: "Load File"
+BTN_OPEN: "Open..."
+BTN_CLOSE: "Close"
+
+MSG_SAVE_BEFORE_CLOSE: "Unsaved changes found. Save?"
