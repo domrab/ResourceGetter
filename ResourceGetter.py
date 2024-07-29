@@ -49,7 +49,7 @@ elif sys.version_info.major == 3:
 
 __author__ = "Dominik Haase"
 __maintainer__ = "Dominik Haase"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # severity level for incidents:
 # MESSAGE: print to stdout
@@ -396,6 +396,10 @@ class ResourceManager(object):
             if x_check(value):
                 value = x_transform(value)
                 break
+
+        # since neither None, nor bool can be subclassed, return them as they are
+        if value is None or isinstance(value, bool):
+            return value
 
         # subclass the _RGObject type
         typ = type(value)
